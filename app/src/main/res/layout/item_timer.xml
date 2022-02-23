@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_margin="16dp"
+    android:background="@drawable/bg_gradient">
+
+    <TextView
+        android:id="@+id/item_timer_question_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/item_timer_question"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/item_timer_dd1_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/item_timer_dd1_tv"
+        android:layout_width="@dimen/timer_item_width"
+        android:layout_height="@dimen/timer_item_height"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/bg_timer_items"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/item_timer_dd2_tv"
+        android:layout_width="@dimen/timer_item_width"
+        android:layout_height="@dimen/timer_item_height"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/bg_timer_items"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_timer_dd1_tv"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/item_timer_days_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/item_timer_days"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/item_timer_dd2_tv"
+        app:layout_constraintStart_toStartOf="@+id/item_timer_dd1_tv"
+        app:layout_constraintTop_toBottomOf="@+id/item_timer_dd2_tv" />
+
+    <TextView
+        android:id="@+id/dots1_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/dots"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item_timer_hh1_tv"
+        app:layout_constraintStart_toEndOf="@+id/item_timer_dd2_tv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_timer_hh1_tv"
+        android:layout_width="@dimen/timer_item_width"
+        android:layout_height="@dimen/timer_item_height"
+        android:background="@drawable/bg_timer_items"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item_timer_hh2_tv"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/item_timer_dd2_tv"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/item_timer_hh2_tv"
+        android:layout_width="@dimen/timer_item_width"
+        android:layout_height="@dimen/timer_item_height"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/bg_timer_items"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item_timer_mm1_tv"
+        app:layout_constraintStart_toEndOf="@+id/item_timer_hh1_tv"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/item_timer_hours_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/item_timer_hours"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/item_timer_hh2_tv"
+        app:layout_constraintStart_toStartOf="@+id/item_timer_hh1_tv"
+        app:layout_constraintTop_toBottomOf="@+id/item_timer_hh2_tv" />
+
+    <TextView
+        android:id="@+id/dots2_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/dots"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item_timer_mm1_tv"
+        app:layout_constraintStart_toEndOf="@+id/item_timer_hh2_tv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_timer_mm1_tv"
+        android:layout_width="@dimen/timer_item_width"
+        android:layout_height="@dimen/timer_item_height"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/bg_timer_items"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item_timer_mm2_tv"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/item_timer_mm2_tv"
+        android:layout_width="@dimen/timer_item_width"
+        android:layout_height="@dimen/timer_item_height"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/bg_timer_items"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/item_timer_minutes_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/item_timer_minutes"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/item_timer_mm2_tv"
+        app:layout_constraintStart_toStartOf="@+id/item_timer_mm1_tv"
+        app:layout_constraintTop_toBottomOf="@+id/item_timer_mm2_tv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

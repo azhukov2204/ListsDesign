@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">ListsDesign</string>
+    <string name="item_menu_home">Home</string>
+    <string name="item_menu_lessons">Lessons</string>
+    <string name="dots">:</string>
+    <string name="item_timer_question">Вы готовы к экзаменам?</string>
+    <string name="item_timer_days">Дней</string>
+    <string name="item_timer_hours">Часов</string>
+    <string name="item_timer_minutes">Минут</string>
+    <string name="item_classes_title">Занятия</string>
+    <string name="classes_count">Сегодня занятий: %s</string>
+    <string name="open_in">Открыть в </string>
+    <string name="lessons_duration_format">%s  %s - %s</string>
+    <string name="item_homeworks_title">Задания</string>
+    <string name="remain_days">Осталось дней: %s</string>
+    <string name="skype_not_found">Скайп не установлен</string>
+    <string name="skype_package_name">com.skype.raider</string>
+    <string name="time_format">"HH:mm"</string>
+    <string name="date_format">dd/MM/yyyy</string>
 </resources>
